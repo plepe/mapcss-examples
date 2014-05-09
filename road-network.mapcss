@@ -1,0 +1,68 @@
+canvas {
+  fill-color: beige;
+  background-color: beige;
+}
+way[highway] {
+  linecap: round;
+  casing-color: grey;
+  text-color: black;
+  font-size: 12;
+}
+way[highway=motorway],
+way[highway=trunk],
+way[highway=motorway_link],
+way[highway=trunk_link] {
+  color: orange;
+}
+way[highway=primary],
+way[highway=secondary],
+way[highway=tertiary] {
+  color: yellow;
+}
+way[highway=unclassified],
+way[highway=residential] {
+  color: white;
+}
+way[highway=pedestrian],
+way[highway=living_street] {
+  color: lightgrey;
+}
+
+way|z8-9[highway=motorway],
+way|z8-9[highway=trunk],
+way|z9-10[highway=motorway_link],
+way|z9-10[highway=trunk_link],
+way|z10-11[highway=primary],
+way|z11-12[highway=secondary],
+way|z12-13[highway=tertiary],
+way|z13-14[highway=unclassified],
+way|z13-14[highway=pedestrian],
+way|z14-15[highway=residential],
+way|z14-15[highway=living_street] {
+  width: 3;
+  casing-width: 1;
+}
+way|z10-[highway=motorway],
+way|z10-[highway=trunk],
+way|z11-[highway=motorway_link],
+way|z11-[highway=trunk_link],
+way|z12-[highway=primary],
+way|z13-[highway=secondary],
+way|z14-[highway=tertiary],
+way|z15-[highway=unclassified],
+way|z15-[highway=pedestrian],
+way|z16-[highway=residential],
+way|z16-[highway=living_street] {
+  width: 6;
+  casing-width: 1.5;
+  text: name;
+  text-position: line;
+}
+way[bridge] {
+  casing-color: black;
+  linecap: none;
+}
+way[tunnel] {
+  casing-dashes: 3,3;
+  linecap: none;
+}
