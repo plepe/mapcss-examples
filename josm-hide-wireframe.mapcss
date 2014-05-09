@@ -1,0 +1,10 @@
+meta {
+  title: "Hide all";
+  description: "Needed for JOSM to hide all default wireframes and points";
+  author: "Stephan Bösch-Plepelits <skunk@xover.mud.at>";
+  link: "https://github.com/plepe/mapcss-examples";
+}
+canvas {
+  default-points: false;
+  default-lines: false;
+}

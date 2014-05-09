@@ -1,0 +1,16 @@
+/* should work with: all MapCSS interpreters */
+/* tested with: JOSM, pgmapcss, Overpass Turbo (partial) */
+meta {
+  title: "Schwarzplan";
+  description: "White background, colors all buildings black";
+  author: "Stephan Bösch-Plepelits <skunk@xover.mud.at>";
+  link: "https://github.com/plepe/mapcss-examples";
+}
+canvas {
+  fill-color: white; /* MapCSS 0.2, pgmapcss */
+  background-color: white; /* JOSM */
+}
+area[building] {
+  fill-color: black;
+  fill-opacity: 1; /* JOSM */
+}

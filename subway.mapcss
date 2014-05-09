@@ -1,0 +1,22 @@
+/* works with: JOSM, pgmapcss */
+meta {
+  title: "Subway map (lines only)";
+  description: "Shows all subway lines in their colour (as set on the relation)";
+  author: "Stephan Bösch-Plepelits <skunk@xover.mud.at>";
+  link: "https://github.com/plepe/mapcss-examples";
+}
+
+/* pgmapcss with Mapnik 2.x: The following rule is needed as values for "color" have to be predictable at compile time. These are the colors of the Viennese subway network. */
+canvas {
+  color: #e51d2e;
+  color: #764785;
+  color: #009900;
+  color: #ff7700;
+  color: #993300;
+}
+
+/* JOSM, pgmapcss */
+relation[route=subway] > way[railway=subway] {
+    color: eval(parent_tag("colour"));
+    width: 10;
+}
