@@ -12,5 +12,6 @@ canvas {
 }
 area[building] {
   fill-color: black;
-  fill-opacity: 1; /* JOSM */
+  fill-opacity: 1; /* JOSM, Overpass Turbo */
+  width: 0; /* Overpass Turbo */
 }
